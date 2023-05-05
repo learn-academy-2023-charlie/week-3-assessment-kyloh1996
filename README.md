@@ -51,3 +51,55 @@ The competent stage is the third level of skill acquisition. In the competent le
 - code that will output correct content in the terminal following best practices
 - "your answers" written in complete sentences the student's own words that provide correct answers
 - well researched and detailed answers written in complete sentences in the student's own words that provides additional context
+
+**/**
+
+Ouestion one const:
+const fibLength1 = 6
+// Expected output: [1, 1, 2, 3, 5, 8]
+
+const fibLength2 = 10
+// Expected output: [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
+
+**/**
+
+Ouestion two const:
+
+
+// Expected output: [15, 15, 20, 30, 30, 60, 90]
+
+const studyMinutesWeek1 = {
+  sunday: 90,
+  monday: 30,
+  tuesday: 20,
+  wednesday: 15,
+  thursday: 30,
+  friday: 15,
+  saturday: 60
+}
+
+// Expected output: [10, 15, 20, 45, 60, 65, 100]
+
+const studyMinutesWeek2 = {
+  sunday: 100,
+  monday: 10,
+  tuesday: 45,
+  wednesday: 60,
+  thursday: 20,
+  friday: 15,
+  saturday: 65
+}
+
+**/** 
+
+Ouestion three const:
+
+
+const accountTransactions1 = [100, -17, -23, -9]
+// Expected output: [100, 83, 60, 51]
+
+const accountTransactions2 = [250, -89, 100, -96]
+// Expected output: [250, 161, 261, 165]
+
+const accountTransactions3 = []
+// Expected output: []
