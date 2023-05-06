@@ -27,6 +27,8 @@
     <script type="text/babel">
 
       // file: src/App.js
+      // import React, {useState} from "react"
+      //  import React from "react"
       const { useState } = React
 
       const App = () => {
@@ -65,24 +67,32 @@
         // No need to change anything ABOVE this line ^
 
         return (
+          <>
           <h1>Draw a Card</h1>
-          <button onClick={}>
+
+          <button onClick = {drawCard}> 
             Click to Draw a Card
-          </button>
-          <button onclick={shuffle}>
+          </button>  
+
+          <button onClick = {shuffle}>
             Return Cards and Shuffle Deck
           </button>
+
           <div style={handStyles}>
             {hand.map((card, index) => {
               return (
+
                 <div style={cardStyles} key={index}>
                   {card}
                 </div>
               )
             })}
           </div>
+          </> /// forgot opening and closing fragments ... draw card works, but the reurn/shuffle button does not.---- The `c` in onClick was lowercased.  
         )
       }
+      
+      // export default App
 
       // No need to change anything below this line
 
