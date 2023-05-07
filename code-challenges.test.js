@@ -44,26 +44,26 @@ describe(`myFib`,  () => {
   
 
 // b) Create the function that makes the test pass.
-
+*
 describe(`fibSeq`,  () => {
   it(`takes in a number thats greater than 2, and returns an array thats length contains the numbers of the Fibonacci sequence equal to the input.`, () => {
     const fibLength1 = 6
     const fibLength2 = 10
-    expect(fibSeq(fibLength1)).toEqual([ 0, 1, 1, 2, 3, 5 ]);
-    expect(fibSeq(fibLength2)).toEqual([ 0, 1,  1,  2,  3, 5, 8, 13, 21, 34 ]);
+    expect(fibSeq(fibLength1)).toEqual([ 1 , 1 , 2 , 3 , 5 , 8 ]);
+    expect(fibSeq(fibLength2)).toEqual([ 1 , 1 , 2 , 3 , 5 , 8 , 13 , 21 , 34 , 55 ]);
   })
 })
 
 const fibSeq = (length) => {
-  let fib = [0,1];
+  let fib = [1,1];
   for (let i=2 ; i<length ; i++) {
     fib[i] = fib[i-1]+fib[i-2]
   }
   return fib;
 }
 
-// console.log(fibSeq(fibLength1)) OUTPUT: [ 0, 1, 1, 2, 3, 5 ]
-// console.log(fibSeq(fibLength2)) OUTPUT: [ 0, 1,  1,  2,  3, 5, 8, 13, 21, 34 ]
+// console.log(fibSeq(fibLength1)) // OUTPUT: [ 1 , 1 , 2 , 3 , 5 , 8 ]
+// console.log(fibSeq(fibLength2)) // OUTPUT: [ 1 , 1 , 2 , 3 , 5 , 8 , 13 , 21, 34 , 55 ]
 
 // PASS  ./code-challenges.test.js fibSeq
 */
